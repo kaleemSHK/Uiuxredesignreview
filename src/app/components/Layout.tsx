@@ -1,4 +1,3 @@
-import { Outlet, NavLink } from "react-router";
 import {
   LayoutDashboard,
   FileText,
@@ -14,14 +13,19 @@ import {
   Bell,
   Search,
   Smartphone,
+  Zap,
+  Users,
 } from "lucide-react";
 import { useState } from "react";
+import { NavLink, Outlet } from "react-router";
 import { Input } from "./ui/input";
 import { Badge } from "./ui/badge";
 import { WebSocketIndicator } from "./WebSocketIndicator";
 
 const navigation = [
   { name: "Dashboard", href: "/", icon: LayoutDashboard },
+  { name: "Dispatch Center", href: "/dispatch", icon: Zap, highlight: true },
+  { name: "Supervisor", href: "/supervisor", icon: Users, highlight: true },
   { name: "Incidents", href: "/incidents", icon: FileText },
   { name: "Units", href: "/units", icon: Radio },
   { name: "Officer MDT", href: "/mdt", icon: Smartphone },

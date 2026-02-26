@@ -8,6 +8,8 @@ import { Reports } from "./pages/Reports";
 import { Analytics } from "./pages/Analytics";
 import { Administration } from "./pages/Administration";
 import { OfficerMDT } from "./pages/OfficerMDT";
+import { DispatchCenter } from "./pages/DispatchCenter";
+import { Supervisor } from "./pages/Supervisor";
 
 export const router = createBrowserRouter([
   {
@@ -15,6 +17,8 @@ export const router = createBrowserRouter([
     Component: Layout,
     children: [
       { index: true, Component: Dashboard },
+      { path: "dispatch", Component: DispatchCenter },
+      { path: "supervisor", Component: Supervisor },
       { path: "incidents", Component: Incidents },
       { path: "units", Component: Units },
       { path: "call-center", Component: CallCenter },
