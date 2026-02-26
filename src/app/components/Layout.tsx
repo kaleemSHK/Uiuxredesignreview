@@ -13,15 +13,18 @@ import {
   User,
   Bell,
   Search,
+  Smartphone,
 } from "lucide-react";
 import { useState } from "react";
 import { Input } from "./ui/input";
 import { Badge } from "./ui/badge";
+import { WebSocketIndicator } from "./WebSocketIndicator";
 
 const navigation = [
   { name: "Dashboard", href: "/", icon: LayoutDashboard },
   { name: "Incidents", href: "/incidents", icon: FileText },
   { name: "Units", href: "/units", icon: Radio },
+  { name: "Officer MDT", href: "/mdt", icon: Smartphone },
   { name: "Call Center", href: "/call-center", icon: Phone },
   { name: "Reports", href: "/reports", icon: BarChart3 },
   { name: "Analytics", href: "/analytics", icon: TrendingUp },

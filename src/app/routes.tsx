@@ -7,6 +7,7 @@ import { CallCenter } from "./pages/CallCenter";
 import { Reports } from "./pages/Reports";
 import { Analytics } from "./pages/Analytics";
 import { Administration } from "./pages/Administration";
+import { OfficerMDT } from "./pages/OfficerMDT";
 
 export const router = createBrowserRouter([
   {
@@ -20,6 +21,7 @@ export const router = createBrowserRouter([
       { path: "reports", Component: Reports },
       { path: "analytics", Component: Analytics },
       { path: "administration", Component: Administration },
+      { path: "mdt", Component: OfficerMDT },
     ],
   },
 ]);

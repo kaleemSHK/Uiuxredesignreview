@@ -1,4 +1,4 @@
-import { AlertTriangle, MapPin, Plus, Radio, RefreshCw, Search, Zap, TrendingUp, Activity } from "lucide-react";
+import { AlertTriangle, MapPin, Plus, Radio, RefreshCw, Search, Zap, TrendingUp, Activity, Bell } from "lucide-react";
 import { Button } from "../components/ui/button";
 import { Input } from "../components/ui/input";
 import { Badge } from "../components/ui/badge";
@@ -9,6 +9,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "../components/ui/select";
+import { WebSocketIndicator } from "../components/WebSocketIndicator";
 
 const stats = [
   { label: "Active Incidents", value: "15", icon: AlertTriangle, gradient: "from-rose-500 to-pink-600", glow: "rose" },
